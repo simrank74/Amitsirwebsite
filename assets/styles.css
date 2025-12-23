@@ -563,6 +563,28 @@ input:focus, select:focus, textarea:focus {
   .site-nav a { padding: 0.75rem 0.85rem; border-radius: 12px; }
   .form-grid { grid-template-columns: 1fr; }
 }
+/* === Dropdown styling fix === */
+select {
+  background-color: rgba(20, 20, 20, 0.95); /* dark charcoal background */
+  color: #ffffff; /* white text */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.85rem 0.9rem;
+  border-radius: 14px;
+  font: inherit;
+  appearance: none;
+}
+
+select:focus {
+  outline: none;
+  border-color: rgba(var(--primary-rgb), 0.55);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+/* Options in dropdown menu */
+select option {
+  background-color: #1a1a1a; /* solid dark grey */
+  color: #ffffff; /* visible white text */
+}
 
 /* Light theme intentionally disabled (client requested dark mustard + charcoal). */
 
